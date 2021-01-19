@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="resources/css/style2.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="drop-menu">
+                <a href="#">Menu</a>
+                <ul class="drop">
+                    <li><a href="profile.html">Your profile</a></li>
+                   
+                    <li><a href="tour-scheme.html">Tour Scheme</a></li>
+                    <li><a href="transport-hotels.html">Hotels & Transportation</a></li>
+                    <li><a href="reserve-ticket.html">Ticket Availability</a></li>
+                    <li><a href="#">Logout</a></li>
+                   
+                </ul>
+            </li>
+            <li><a  href="home.html">Home</a></li>
+            <li><a href="package.html">tour package</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="hotels-quality.html">Services</a></li>
+            <li><a href="contact.html">contact Us</a></li>
+            <li><a class="active-page" href="dashboard.html">Admin</a></li>
+            
+          </ul>
+    </nav>
+    <main>
+<div class="dashboard">
+  <div class="container-dash">
+    <h2 class="heading">Dashboard</h2>
+    <div class="ad-prof col">
+        <img src="resources/images/motiur.jpg" alt="">
+        <p>Admin</p>
+    </div>
+    <div class="suggest-pack col "><a href="dashboard.html" ><h4><i class="fas fa-box k"></i> &nbsp;&nbsp; suggested package</h4></a></div>
+    <div class="suggest-pack col"><a href="confirm-transaction.html"><i class="fas fa-wallet k"></i>&nbsp;&nbsp; Approve Transaction</a></div>
+    <div class="suggest-pack col"><a href="edit-tourscheme1.html"><i class="fas fa-edit k"></i>  &nbsp;&nbsp;Edit Tour-scheme</a></div>
+    <div class="suggest-pack col active"><a href="dash-create-pack.html" ><h4><i class="fas fa-box k"></i> &nbsp;&nbsp; Create package</h4></a></div>
+  </div>
+</div>
+<div class="box">
+    <h1 style="text-align: center">Add Package</h1>
+    <div class="f-group">
+        <label for="name"> <span class="f-size">Package Name:</span> </label>
+
+        <input type="text" class="inp-w-h1" placeholder="Enter your package name..." />
+    </div>
+
+    <div class="f-group">
+        <label for="name"> <span class="f-size">Package Type:</span> </label>
+        <input type="text" class="inp-w-h1" placeholder="Enter the package type..." />
+    </div>
+
+    <div class="f-group">
+        <label for="name"> <span class="f-size">Package Location:</span> </label>
+        <input type="text" class="inp-w-h1" placeholder="Enter the package location..." />
+    </div>
+
+    <div class="f-group">
+        <label for="name"> <span class="f-size">Package Price:</span> </label>
+        <input type="text" class="inp-w-h1" placeholder="Enter the package price..." />
+    </div>
+
+    <div class="f-group">
+        <label for="name"> <span class="f-size">Package Feature:</span> </label>
+        <input type="text" class="inp-w-h1" placeholder="Enter package feature..." />
+    </div>
+    <div class="f-group">
+        <label> <span class="f-size">Package Details:</span> </label>
+        <input type="text" class="inp-w-h1" placeholder="Enter package details..." />
+    </div>
+    <button type="submit " class="btn">Create Package</button>
+</div>
+    </main>
+    <style>
+        .suggest-pack{
+            background: rgba(0, 0, 0, 0.212);
+            height: 60px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+       .active, .suggest-pack:hover{
+            background: rgb(24, 21, 21);
+        }
+        main{
+            min-height: 100vh;
+            min-width: 100vh;
+            background:#2c3e50;
+            display: flex;
+            
+         /* justify-content: center; */
+
+        }
+        .dashboard{
+            width: 20%;
+            min-height: 90vh;
+            background:#34495e;
+            /* border-radius: 2rem; */
+            padding-top: 20px;
+
+
+        }
+        .col{
+            margin: 20px 0;
+            width: 200px;
+         
+        }
+        .container-dash{
+            display: flex;
+            flex-direction: column;
+           align-items: center;
+           text-align: left;
+           color:white;
+          
+            
+        }
+        .dashboard .heading{
+            color: white;
+            margin: 30px;
+
+        }
+        .ad-prof{
+           
+           text-align: center;
+        }
+        .ad-prof img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 5px solid rgb(248, 244, 244);
+        }
+        .k{
+            color: #0962bb;
+            font-size: 20px;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        a:hover{
+            color: red;
+        }
+.box{
+    color:white;
+}
+
+       
+    </style>
+</body>
+
+</html>

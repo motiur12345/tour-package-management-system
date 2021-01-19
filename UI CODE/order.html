@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="resources/css/style2.css" />
+
+    <title>order</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="drop-menu">
+                <a href="#">Menu</a>
+                <ul class="drop">
+                    <li><a href="profile.html">Your profile</a></li>
+                    
+                    <li><a href="tour-scheme.html">Tour Scheme</a></li>
+                    <li><a href="transport-hotels.html">Hotels & Transportation</a></li>
+                    <li><a href="reserve-ticket.html">Ticket Availability</a></li>
+                    <li><a href="#">Logout</a></li>
+                   
+                </ul>
+            </li>
+            <li><a  href="home.html">Home</a></li>
+            <li><a href="package.html">tour package</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="hotels-quality.html">Services</a></li>
+            <li><a href="contact.html">contact Us</a></li>
+            <li><a href="dashboard.html">Admin</a></li>
+            
+          </ul>
+    </nav>
+    <div class="con-order">
+        <div class="container order-1">
+            <div class="order">
+                <h2>Order summary</h2>
+                <hr />
+                <table style="width: 100%">
+                    <tr>
+                        <th>Description</th>
+                        <th>Amount</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            saint martin <br /> 5 days
+                        </td>
+                        <td>5000k</td>
+                    </tr>
+                    <tr>
+                        <td class="l">Quantity</td>
+                        <td class="l">1</td>
+                    </tr>
+                    <tr>
+                        <td>total</td>
+                        <td>5000/=</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="payment-method">
+                <h3>*pay with paypal qi-sub_account</h3>
+                <label for="email"> Email:</label> <br />
+                <input type="email" id="email" placeholder="email" /> <br />
+                <label for="pass"> paypal password:</label> <br />
+
+                <input type="password" id="pass" placeholder="password" />
+                <br />
+
+                <input type="checkbox" />This is not shared computer. what's this?
+                <br /><button class="log">Login</button>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .log {
+            padding: 10px 30px;
+            background: rgb(9, 170, 71);
+            border: none;
+            border-radius: 3px;
+        }
+        
+        .payment-method {
+            width: 500px;
+            line-height: 1.7;
+        }
+        
+        .payment-method input[type="email"],
+        input[type="password"] {
+            width: 300px;
+            padding: 7px;
+            border: 1px solid red;
+            border-radius: 4px;
+        }
+        
+        .order-1 {
+            background: rgba(35, 52, 63, 0.63);
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 30px 15px;
+        }
+        
+        .con-order {
+            background: url(resources/images/sajek-bg2.jpg) no-repeat;
+            background-size: cover;
+            background-blend-mode: multiply;
+            background-color: rgba(18, 17, 17, 0.623);
+            width: 100%;
+            height: 780px;
+        }
+        
+        th,
+        .l {
+            /* border: 1px solid red; */
+            /* border-collapse: collapse;
+        margin: 0; */
+            border-bottom: 2px solid black;
+        }
+        
+        th,
+        td {
+            padding: 8px;
+        }
+        
+        .order {
+            width: 250px;
+            margin-right: 50px;
+            border: 2px solid rgb(32, 30, 30);
+            border-radius: 5px;
+            /* padding: 10px; */
+            text-align: center;
+            background: rgba(63, 61, 61, 0.699);
+        }
+        
+        .container {
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        
+        body {
+            font-size: 20px;
+        }
+    </style>
+</body>
+
+</html>
